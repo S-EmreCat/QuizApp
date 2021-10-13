@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderBoardActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:outlineSpotShadowColor="@color/design_default_color_error"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@drawable/custom_loginbutton"
+            android:text="Today"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="115dp"
+            android:background="@drawable/custom_loginbutton"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:text="Month"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="115dp"
+            android:background="@drawable/custom_loginbutton"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:text="All Times"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView2ndScore"
+            android:layout_width="90dp"
+            android:layout_height="140dp"
+            android:background="@drawable/leaderboardlist"
+            android:gravity="center|center_horizontal"
+            android:text="2"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView1ndScore"
+            android:layout_width="90dp"
+            android:layout_height="170dp"
+            android:padding="5dp"
+            android:background="@drawable/leaderboardlist"
+            android:gravity="center|center_horizontal"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView3ndScore"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2ndScore"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView3ndScore"
+            android:layout_width="90dp"
+            android:layout_height="110dp"
+            android:padding="5dp"
+            android:background="@drawable/leaderboardlist"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView2ndUsername"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2ndScore"
+            app:layout_constraintEnd_toStartOf="@+id/textView1ndUsername"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView1ndUsername"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView1ndScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/textView3ndUsername"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3ndScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView1ndUsername"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

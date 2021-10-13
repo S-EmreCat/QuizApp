@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="not_a_member_sign_up">Not a member? Sign Up</string>
+    <string name="sport">sport</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="already_resgistered_log_in">Already resgistered? Log in</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="signUp">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="_10pt">10pt</string>
+    <string name="your_score">Your Score</string>
+    <string name="_100">100%</string>
+    <string name="completion">Completion</string>
+    <string name="correct">Correct</string>
+    <string name="_10">10</string>
+    <string name="total_question">Total Question</string>
+    <string name="wrong">Wrong</string>
+    <string name="play_again">Play Again</string>
+    <string name="share_score">Share Score</string>
+    <string name="review_answer">Review Answer</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="home">Home</string>
+    <string name="generate_pdf">Generate PDF</string>
+</resources>
